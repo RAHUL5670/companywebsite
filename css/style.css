@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+    --color-bg-1: #121212;
+    --color-bg-2: #242424;
+    --color-brand: #e7b837;
+    --color-brand-light: #dbb959;
+    --colo-body: #c0c0c0;
+    --color-heading: #fff;
+    --color-border: rgba(255, 255, 255, 0.1);
+    --color-bg-1: #121212;
+    --font-main: "Plus Jakarta Sans";
+    --border-radius: 32px;
+}
+
+body {
+    background-color: var(--color-bg-1);
+    color: var(--colo-body);
+    font-family: var(--font-main);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: var(--color-heading);
+}
+
+a {
+    transition: all 0.4s ease;
+    text-decoration: none;
+    color: var(--colo-body);
+}
+
+a:hover {
+    color: var(--color-brand)
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    /* padding-top: 120px; */
+    padding-bottom: 120px;
+}
+
+#logo {
+    height: 90px;
+    width: 120px;
+}
+
+/* navbar start  */
+.navbar {
+    background-color: var(--color-bg-1);
+}
+
+/* btn css start */
+
+.btn {
+    padding: 12px 20px;
+}
+
+.btn-brand {
+    background-color: var(--color-brand);
+    color: var(--color-bg-1);
+    font-weight: 700;
+    border-radius: 100px;
+}
+
+@media(min-width:992px){
+    .heroh{
+        margin-top: 150px;
+    }
+}
+
+@media(max-width:992px){
+    .heroh{
+        margin-top: 100px;
+    }
+}
+
+/* btn css end */
+
+/* about start  */
+
+#about h1 {
+    font-weight: 800;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 26px auto;
+}
+
+#about .input-group {
+    background-color: var(--color-bg-2);
+    padding: 12px;
+    border-radius: 100px;
+    margin-bottom: 120px;
+}
+
+#about .input-group .btn {
+    border-radius: 100px;
+}
+
+#about .form-control {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--colo-body);
+}
+
+#about .form-control:focus {
+    box-shadow: none;
+}
+
+.bg-image {
+    min-height: 450px;
+    background-image: url(/images/pexels-mart-production-7550538.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* about end */
+
+/* services section start  */
+
+.border-bottom{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+.section-title h6 {
+    background-color: var(--color-brand);
+    padding: 8px 16px;
+    border-radius: 100px;
+    color: var(--color-bg-1);
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.service {
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-2);
+}
+
+.icon-box {
+    width: 74px;
+    height: 74px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    font-size: 34px;
+    color: white;
+}
+
+/* services section end  */
+
+/* feature start  */
+.feature-list {
+    padding: 0;
+    list-style: none;
+}
+
+#sm {
+    width: 32px;
+    /* border-radius: 100%; */
+    height: 32px;
+    font-size: 20px;
+}
+
+#features .row {
+    margin-top: 80px;
+}
+
+/* feature end */
+
+/* team member start  */
+
+.team-member{
+    position: relative;
+}
+.team-member img{
+    height: 180px;
+    max-width: 180px;
+}
+
+.social-icon{
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+}
+
+.team-member::before{
+    content: '';
+    width: 100%;
+    /* height:calc(100%-90px); */
+ height: 100%;
+    background-color: var(--color-bg-2);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/* team member end */
+
+
+
+/* start  blog post  */
+.blog-post img{
+    object-fit: cover;
+    /* width: 415px; */
+    min-height: 300px;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+.blog-post{
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-2);
+}
+
+.blog-post .title{
+    line-height:1.4;
+}
+
+.bg-image1 {
+    min-height: 450px;
+    background-image: url(/images/pexels-moe-magners-7495615.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* end  blog post  */
